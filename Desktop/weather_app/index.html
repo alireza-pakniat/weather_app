@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Forecast</h1>
+    </header>
+
+    <main>
+        <section id="location-section">
+            <h2>Your Location</h2>
+            <p id="ip-location">Detecting location based on IP...</p>
+            <button id="detect-location-btn">Detect My Location (Browser)</button>
+            <p id="browser-location-status"></p> <p id="nearest-capital">Nearest Provincial Capital: <span id="capital-city-name">-</span></p>
+
+            <div class="city-selection">
+                <label for="city-select">Or Select a Provincial Capital:</label>
+                <select name="cities" id="city-select">
+                    <option value="">Loading capitals...</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="weather-forecast-section">
+            <h2>Weather Forecast</h2>
+
+            <div id="current-weather-display">
+                <h3>Current Weather for <span id="weather-location-display">-</span></h3>
+                <p id="current-temp">-</p>
+                <p id="current-condition">-</p>
+                <p id="current-wind">-</p>
+            </div>
+
+            <article id="seven-day-forecast">
+                <h3>7-Day Forecast</h3>
+                <div class="forecast-container" id="seven-day-container">
+                    <p>Loading 7-day forecast...</p>
+                </div>
+            </article>
+
+            <article id="hourly-forecast">
+                <h3>Hourly Forecast (Today & Tomorrow)</h3>
+                <h4>Today</h4>
+                <div class="forecast-container" id="hourly-today-container">
+                    <p>Loading today's hourly forecast...</p>
+                </div>
+                <h4>Tomorrow</h4>
+                <div class="forecast-container" id="hourly-tomorrow-container">
+                    <p>Loading tomorrow's hourly forecast...</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Web Programming Assignment - Weather Page</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

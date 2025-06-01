@@ -1,0 +1,156 @@
+/* Basic Reset & Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px; /* Limit overall width for larger screens */
+  margin: 20px auto; /* Center the main content */
+}
+
+section {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+h3 {
+  color: #555;
+}
+
+h4 {
+  color: #666;
+  margin-top: 15px;
+}
+
+/* Location Section */
+#location-section p {
+  margin: 10px 0;
+}
+
+#detect-location-btn {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#detect-location-btn:hover {
+  background-color: #4cae4c;
+}
+
+#browser-location-status {
+  font-style: italic;
+  color: #777;
+}
+
+.city-selection {
+  margin-top: 15px;
+}
+
+.city-selection label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#city-select {
+  width: 100%;
+  max-width: 300px; /* Adjust as needed */
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Weather Forecast Section */
+#weather-forecast-section #current-weather-display {
+  background-color: #e7f5ff; /* Light blue background for current weather */
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#current-weather-display p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+#current-weather-display #current-temp {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+.forecast-container {
+  display: grid; /* Using grid for basic layout - will be adjusted for responsiveness */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Example for cards */
+  gap: 15px; /* Space between forecast items */
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+/* Placeholder for individual forecast items (cards) */
+.forecast-card { /* You will create elements with this class in JS */
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.forecast-card h5 { /* For date/time in card */
+  margin-top: 0;
+  color: #333;
+}
+
+.forecast-card p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.weather-icon {
+  font-size: 2em; /* Adjust size of emoji icons */
+  margin: 5px 0;
+}
